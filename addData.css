@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="file"],
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form input[type="file"] {
+    height: auto;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Existing styles */
+
+/* Loading animation */
+form button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Response messages */
+form div.response {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form div.response.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+form div.response.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: none;
+    color: rgb(158, 200, 255);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.floating-button:hover {
+    transform: translateY(-3px);
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.15rem;
+    color: #000;
+    margin-top: 3rem;
+}
+
+#categories {
+    width: 100%;
+    font-size: 1.15rem;
+    background-color: #fff;
+    padding: 0.675em 1em;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #000;
+    transition: transform ease-in-out 0.3s;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}

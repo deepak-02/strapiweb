@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload & Product Submission</title>
+    <link rel="stylesheet" href="addData.css">
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form id="imageUploadForm" action="http://localhost:1337/api/upload" method="POST" enctype="multipart/form-data">
+        <div>
+            <div class="product-image">
+                <div class="image-container">
+                    <!-- The image will be inserted here dynamically -->
+                </div>
+            </div>
+            <label for="image_uploads">Choose an image to upload:</label>
+            <input type="file" id="image_uploads" name="files" accept=".jpg, .jpeg, .png">
+        </div>
+        <div>
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+    
+
+    <h1>Submit Product Details</h1>
+    <form id="productForm">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand">
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="availability">Availability:</label>
+            <input type="number" id="availability" name="availability">
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price">
+        </div>
+        <div>
+            <label for="categories">Categories:</label>
+            <select id="categories" name="categories">
+                <option value="1">Mobile</option>
+                <option value="2">Laptop</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="cover_image">Cover Image ID:</label>
+            <input type="number" id="cover_image" name="cover_image">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <button class="floating-button" onclick="location.href='listview.html';">List Products</button>
+    <script src="editData.js"></script>
+</body>
+</html>
